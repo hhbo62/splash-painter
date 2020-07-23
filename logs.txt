@@ -1,0 +1,260 @@
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging eraser
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging clear
+Logging enlarge
+Logging enlarge
+Logging enlarge
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging Change to GREEN
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging change to BROWN
+Logging enlarge
+Logging enlarge
+Logging enlarge
+Logging enlarge
+Logging enlarge
+Logging smaller
+Logging smaller
+Logging smaller
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging enlarge
+Logging enlarge
+Logging enlarge
+Logging Program Exited
+Logging set display
+Logging set caption + init
+Logging variables
+Logging set recw width + height
+Logging init buttons
+Logging game loop init!!
+Logging enlarge
+Logging enlarge
+Logging enlarge
+Logging smaller
+Logging smaller
+Logging smaller
+Logging smaller
+Logging Program Exited
