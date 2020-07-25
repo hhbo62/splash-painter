@@ -1,14 +1,14 @@
 from random import randint as rn
-file1 = open("logs.txt","a") 
+file1 = open("logs.txt","a")
 
 def log(logText, error=False, log=True):
     if error and not log:
         file1.write(f'The program logged an error. {logText}\n')
     elif not error and log:
         file1.write(f'Logging {logText}\n')
-    elif error and log: 
+    elif error and log:
         file1.write(f'There was an error and a log: {logText}\n')
-    
+
 import pygame
 
 print("Welcome to paint program")
@@ -87,7 +87,7 @@ while gameOn:
         if event.type == pygame.QUIT:
             gameOn = False
             log(logText = "Program Exited")
-        
+
         elif event.type == pygame.MOUSEBUTTONDOWN:
             spot = pygame.mouse.get_pos()
             if minusRect.collidepoint(spot):
@@ -111,7 +111,7 @@ while gameOn:
             elif event.key == pygame.K_b or pygame.K_f:
                 fDown = True
                 log(logText = "fill")
-    
+
     if fDown and mouse_down:
         spot = pygame.mouse.get_pos()
         if redRectangle.collidepoint(spot):
@@ -187,17 +187,17 @@ while gameOn:
             dis_width = 720
             dis_height = 500
             screen = pygame.display.set_mode([dis_width,dis_height])
-            
+
         elif maxRect.collidepoint(spot):
             #if we click on the minimize button...
             dis_width = 1200
             dis_height = 700
             screen = pygame.display.set_mode([dis_width,dis_height])
-            
+
         else:
             # if it's not within a button, place a circle at the spot the mouse was pressed
             pygame.draw.circle(screen, currentColour, spot, radius)
-        
+
     pygame.draw.rect(screen, DARKGREY, topRectangle)
     pygame.draw.rect(screen, RED, redRectangle)
     pygame.draw.rect(screen, GREEN, greenRectangle)
@@ -205,9 +205,9 @@ while gameOn:
     pygame.draw.rect(screen, BROWN, brownRectangle)
     pygame.draw.rect(screen, GREY, greyRectangle)
     pygame.draw.rect(screen, BLACK, blackRectangle)
-    
+
     pygame.draw.circle(screen, currentColour, (dis_width - radius, radius), radius)
-    
+
     screen.blit(maximize, maxRect)
     screen.blit(minimize, minRect)
     screen.blit(plusButton, plusRect)
