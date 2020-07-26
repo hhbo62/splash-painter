@@ -1,3 +1,4 @@
+print("this is NOT the main branch! This is a test branch, so scram LOL!")
 from random import randint as rn
 file1 = open("logs.txt","a")
 
