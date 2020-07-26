@@ -12,6 +12,7 @@ This program was written in Pygame, and the icons were designed in [Adobe Illust
 With a completely re-design interface, this is probably the biggest update ever!
 
 ### What's new?
+- Bug Fixes
 - Title Bar
 - New colors
 - Buttons for clear, eraser, and brush size bigger and smaller!
