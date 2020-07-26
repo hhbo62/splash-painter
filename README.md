@@ -17,3 +17,10 @@ With a completely re-design interface, this is probably the biggest update ever!
 - New colors
 - Buttons for clear, eraser, and brush size bigger and smaller!
 - Performance improvements under the hood
+
+#Download
+1. Make a new folder called splash-painter
+2. [Download](https://github.com/hhbo62/splash-painter) all files AS-IS into the splash-painter directory
+3. Make sure you have pygame installed (pip install pygame)
+4. Open main.py and run.
+5. A window with the program should open up
