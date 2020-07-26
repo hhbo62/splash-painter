@@ -9,7 +9,6 @@ This program was written in Pygame, and the icons were designed in [Adobe Illust
 
 # Updates:
 ## 1.5.6 is here!
-With a completely re-design interface, this is probably the biggest update ever!
 
 ### What's new?
 - Bug Fixes
