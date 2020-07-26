@@ -1,4 +1,3 @@
-print("this is NOT the main branch! This is a test branch, so scram LOL!")
 from random import randint as rn
 file1 = open("logs.txt","a")
 
@@ -82,7 +81,7 @@ log(logText = "init buttons")
 
 log(logText = "game loop init!!")
 while gameOn:
-
+    topRectangle = pygame.Rect((0,0),(dis_width, 2 * rec_height))
     fDown = False
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
