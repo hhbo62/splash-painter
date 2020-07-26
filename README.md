@@ -8,7 +8,7 @@ This program was written in Pygame, and the icons were designed in [Adobe Illust
 ""NOTE"" This has [been fixed] (https://github.com/hhbo62/splash-painter/pull/2)
 
 # Updates:
-## 1.5 is here!
+## 1.6 is here!
 With a completely re-design interface, this is probably the biggest update ever!
 
 ### What's new?
