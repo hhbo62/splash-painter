@@ -10,14 +10,10 @@ This program was written in Pygame, and the icons were designed in [Adobe Illust
   - I really am out of ideas to add and I would really appreciate it!
 
 # Updates:
-## 1.5.6 is here!
+## 1.5.7 is here!
 
 ### What's new?
-- Bug Fixes
-- Title Bar
-- New colors
-- Buttons for clear, eraser, and brush size bigger and smaller!
-- Performance improvements under the hood
+- Link to our website
 
 # Download:
 1. Make a new folder called splash-painter
