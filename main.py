@@ -1,3 +1,4 @@
+import webbrowser
 from random import randint as rn
 file1 = open("logs.txt","a")
 
@@ -52,6 +53,7 @@ brownRectangle = pygame.Rect((3*rec_width, 0),(rec_width, rec_height))
 greyRectangle = pygame.Rect((4*rec_width,0), (rec_width, rec_height))
 blackRectangle = pygame.Rect((5*rec_width,0), (rec_width, rec_height))
 
+link = pygame.image.load("link.png")
 maximize = pygame.image.load("maximize.png")
 minimize = pygame.image.load("minimize.png")
 randColor = pygame.image.load("random_color.png")
@@ -59,6 +61,7 @@ minusButton = pygame.image.load("minus.png")
 plusButton = pygame.image.load("plus.png")
 eraser = pygame.image.load("eraser.png")
 clearButton = pygame.image.load("clear.png")
+
 maximize = pygame.transform.scale(maximize, (rec_height, rec_height))
 minimize = pygame.transform.scale(minimize, (rec_height, rec_height))
 randColor = pygame.transform.scale(randColor, (rec_height, rec_height))
@@ -66,6 +69,8 @@ clearButton = pygame.transform.scale(clearButton, (rec_height, rec_height))
 eraser = pygame.transform.scale(eraser, (rec_height, rec_height))
 minusButton = pygame.transform.scale(minusButton, (rec_height, rec_height))
 plusButton = pygame.transform.scale(plusButton, (rec_height, rec_height))
+link = pygame.transform.scale(link, (rec_height, rec_height))
+
 minusRect = minusButton.get_rect(topleft=(0, rec_height))
 plusRect = minusButton.get_rect(topleft=(rec_height, rec_height))
 eraserRect = eraser.get_rect(topleft=(2*rec_height, rec_height))
@@ -73,6 +78,8 @@ clearRect = clearButton.get_rect(topleft=(3*rec_height, rec_height))
 randRect = randColor.get_rect(topleft=(4*rec_height, rec_height))
 maxRect = maximize.get_rect(topleft=(6*rec_height, rec_height))
 minRect = minimize.get_rect(topleft=(7*rec_height, rec_height))
+linkRect = link.get_rect(topleft=(9*rec_height, rec_height))
+
 
 screen.fill(bgColor)
 
@@ -82,6 +89,7 @@ log(logText = "init buttons")
 log(logText = "game loop init!!")
 while gameOn:
     topRectangle = pygame.Rect((0,0),(dis_width, 2 * rec_height))
+
     fDown = False
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -188,6 +196,9 @@ while gameOn:
             dis_height = 500
             screen = pygame.display.set_mode([dis_width,dis_height])
 
+        elif linkRect.collidepoint(spot):
+            webbrowser.open("https://hhbo62.github.io/splash-painter")
+
         elif maxRect.collidepoint(spot):
             #if we click on the minimize button...
             dis_width = 1200
@@ -215,6 +226,7 @@ while gameOn:
     screen.blit(eraser, eraserRect)
     screen.blit(clearButton, clearRect)
     screen.blit(randColor, randRect)
+    screen.blit(link, linkRect)
     pygame.display.update()
 
 pygame.quit()
