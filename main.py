@@ -3,12 +3,12 @@ from random import randint as rn
 file1 = open("logs.txt","a")
 
 def log(logText, error=False, log=True):
-    if error and not log:
-        file1.write(f'The program logged an error. {logText}\n')
-    elif not error and log:
-        file1.write(f'Logging {logText}\n')
-    elif error and log:
-        file1.write(f'There was an error and a log: {logText}\n')
+	if error and not log:
+		file1.write(f'The program logged an error. {logText}\n')
+	elif not error and log:
+		file1.write(f'Logging {logText}\n')
+	elif error and log:
+		file1.write(f'There was an error and a log: {logText}\n')
 
 import pygame
 
@@ -88,146 +88,146 @@ log(logText = "init buttons")
 
 log(logText = "game loop init!!")
 while gameOn:
-    topRectangle = pygame.Rect((0,0),(dis_width, 2 * rec_height))
+	topRectangle = pygame.Rect((0,0),(dis_width, 2 * rec_height))
 
-    fDown = False
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            gameOn = False
-            log(logText = "Program Exited")
+	fDown = False
+	for event in pygame.event.get():
+		if event.type == pygame.QUIT:
+			gameOn = False
+			log(logText = "Program Exited")
 
-        elif event.type == pygame.MOUSEBUTTONDOWN:
-            spot = pygame.mouse.get_pos()
-            if minusRect.collidepoint(spot):
-                if radius > 5:
-                    radius -= 5
-                    log(logText = "smaller")
-            elif plusRect.collidepoint(spot):
-                if radius < 40:
-                    radius += 5
-                    log(logText = "enlarge")
-            else:
-                mouse_down = True
+		elif event.type == pygame.MOUSEBUTTONDOWN:
+			spot = pygame.mouse.get_pos()
+			if minusRect.collidepoint(spot):
+				if radius > 5:
+					radius -= 5
+					log(logText = "smaller")
+			elif plusRect.collidepoint(spot):
+				if radius < 40:
+					radius += 5
+					log(logText = "enlarge")
+			else:
+				mouse_down = True
 
-        elif event.type == pygame.MOUSEBUTTONUP:
-            mouse_down = False
+		elif event.type == pygame.MOUSEBUTTONUP:
+			mouse_down = False
 
-        elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_SPACE:
-                screen.fill(bgColor)
-                log(logText = "clear")
-            elif event.key == pygame.K_b or pygame.K_f:
-                fDown = True
-                log(logText = "fill")
+		elif event.type == pygame.KEYDOWN:
+			if event.key == pygame.K_SPACE:
+				screen.fill(bgColor)
+				log(logText = "clear")
+			elif event.key == pygame.K_b or pygame.K_f:
+				fDown = True
+				log(logText = "fill")
 
-    if fDown and mouse_down:
-        spot = pygame.mouse.get_pos()
-        if redRectangle.collidepoint(spot):
-            bgColor = RED
-            screen.fill(bgColor)
-        elif greenRectangle.collidepoint(spot):
-             bgColor = GREEN
-             screen.fill(bgColor)
-        elif blueRectangle.collidepoint(spot):
-             bgColor = BLUE
-             screen.fill(bgColor)
-        elif brownRectangle.collidepoint(spot):
-            bgColor = BROWN
-            screen.fill(bgColor)
-        elif greyRectangle.collidepoint(spot):
-            bgColor = GREY
-            screen.fill(bgColor)
-        elif blackRectangle.collidepoint(spot):
-            bgColor = BLACK
-            screen.fill(bgColor)
+	if fDown and mouse_down:
+		spot = pygame.mouse.get_pos()
+		if redRectangle.collidepoint(spot):
+			bgColor = RED
+			screen.fill(bgColor)
+		elif greenRectangle.collidepoint(spot):
+			 bgColor = GREEN
+			 screen.fill(bgColor)
+		elif blueRectangle.collidepoint(spot):
+			 bgColor = BLUE
+			 screen.fill(bgColor)
+		elif brownRectangle.collidepoint(spot):
+			bgColor = BROWN
+			screen.fill(bgColor)
+		elif greyRectangle.collidepoint(spot):
+			bgColor = GREY
+			screen.fill(bgColor)
+		elif blackRectangle.collidepoint(spot):
+			bgColor = BLACK
+			screen.fill(bgColor)
 
-    if mouse_down:
-        # if the event is pressing the mouse
-        # get the current position of the mouse
-        spot = pygame.mouse.get_pos()
-        if redRectangle.collidepoint(spot):
-            # if the current position is within the red square, change the colour to red
-            currentColour = RED
-            log(logText = "change to RED")
-        elif greenRectangle.collidepoint(spot):
-            # if the current position is within the green square, change the colour to green
-            currentColour = GREEN
-            log(logText = "Change to GREEN")
-        elif blueRectangle.collidepoint(spot):
-            # if the current position is within the blue square, change the colour to blue
-            currentColour = BLUE
-            log(logText = "change to BLUE")
-        elif brownRectangle.collidepoint(spot):
-            # if the current position is within the brown square, change the colour to brown
-            currentColour = BROWN
-            log(logText = "change to BROWN")
-        elif greyRectangle.collidepoint(spot):
-            #if the current position is within the grey square, change the colour to grey
-            currentColour = GREY
-            log(logText = "change to GREY")
-        elif blackRectangle.collidepoint(spot):
-            #if the current position is within the black square, change the colour to black
-            currentColour = BLACK
-            log(logText = "change to BLACK")
-        elif clearRect.collidepoint(spot):
-            #If the current position is within the grey square, clear the screen
-            screen.fill(bgColor)
-            log(logText = "clear")
-        elif eraserRect.collidepoint(spot):
-            #if the current position is within the eraser, clear the screen
-            currentColour = bgColor
-            log(logText = "eraser")
-        elif randRect.collidepoint(spot):
-            #if the current position is within the rand color, choose a random color the screen
-            choice = int(rn(0,5))
-            if choice == 1:
-                currentColour = RED
-            elif choice == 2:
-                currentColour = GREEN
-            elif choice == 3:
-                currentColour = BLUE
-            elif choice == 4:
-                currentColour = GREY
-            elif choice == 5:
-                currentColour = BROWN
-        elif minRect.collidepoint(spot):
-            #if we click on the minimize button...
-            dis_width = 720
-            dis_height = 500
-            screen = pygame.display.set_mode([dis_width,dis_height])
+	if mouse_down:
+		# if the event is pressing the mouse
+		# get the current position of the mouse
+		spot = pygame.mouse.get_pos()
+		if redRectangle.collidepoint(spot):
+			# if the current position is within the red square, change the colour to red
+			currentColour = RED
+			log(logText = "change to RED")
+		elif greenRectangle.collidepoint(spot):
+			# if the current position is within the green square, change the colour to green
+			currentColour = GREEN
+			log(logText = "Change to GREEN")
+		elif blueRectangle.collidepoint(spot):
+			# if the current position is within the blue square, change the colour to blue
+			currentColour = BLUE
+			log(logText = "change to BLUE")
+		elif brownRectangle.collidepoint(spot):
+			# if the current position is within the brown square, change the colour to brown
+			currentColour = BROWN
+			log(logText = "change to BROWN")
+		elif greyRectangle.collidepoint(spot):
+			#if the current position is within the grey square, change the colour to grey
+			currentColour = GREY
+			log(logText = "change to GREY")
+		elif blackRectangle.collidepoint(spot):
+			#if the current position is within the black square, change the colour to black
+			currentColour = BLACK
+			log(logText = "change to BLACK")
+		elif clearRect.collidepoint(spot):
+			#If the current position is within the grey square, clear the screen
+			screen.fill(bgColor)
+			log(logText = "clear")
+		elif eraserRect.collidepoint(spot):
+			#if the current position is within the eraser, clear the screen
+			currentColour = bgColor
+			log(logText = "eraser")
+		elif randRect.collidepoint(spot):
+			#if the current position is within the rand color, choose a random color the screen
+			choice = int(rn(0,5))
+			if choice == 1:
+				currentColour = RED
+			elif choice == 2:
+				currentColour = GREEN
+			elif choice == 3:
+				currentColour = BLUE
+			elif choice == 4:
+				currentColour = GREY
+			elif choice == 5:
+				currentColour = BROWN
+		elif minRect.collidepoint(spot):
+			#if we click on the minimize button...
+			dis_width = 720
+			dis_height = 500
+			screen = pygame.display.set_mode([dis_width,dis_height])
 
-        elif linkRect.collidepoint(spot):
-            webbrowser.open("https://hhbo62.github.io/splash-painter")
+		elif linkRect.collidepoint(spot):
+			webbrowser.open("https://hhbo62.github.io/splash-painter")
 
-        elif maxRect.collidepoint(spot):
-            #if we click on the minimize button...
-            dis_width = 1200
-            dis_height = 700
-            screen = pygame.display.set_mode([dis_width,dis_height])
+		elif maxRect.collidepoint(spot):
+			#if we click on the minimize button...
+			dis_width = 1200
+			dis_height = 700
+			screen = pygame.display.set_mode([dis_width,dis_height])
 
-        else:
-            # if it's not within a button, place a circle at the spot the mouse was pressed
-            pygame.draw.circle(screen, currentColour, spot, radius)
+		else:
+			# if it's not within a button, place a circle at the spot the mouse was pressed
+			pygame.draw.circle(screen, currentColour, spot, radius)
 
-    pygame.draw.rect(screen, DARKGREY, topRectangle)
-    pygame.draw.rect(screen, RED, redRectangle)
-    pygame.draw.rect(screen, GREEN, greenRectangle)
-    pygame.draw.rect(screen, BLUE, blueRectangle)
-    pygame.draw.rect(screen, BROWN, brownRectangle)
-    pygame.draw.rect(screen, GREY, greyRectangle)
-    pygame.draw.rect(screen, BLACK, blackRectangle)
+	pygame.draw.rect(screen, DARKGREY, topRectangle)
+	pygame.draw.rect(screen, RED, redRectangle)
+	pygame.draw.rect(screen, GREEN, greenRectangle)
+	pygame.draw.rect(screen, BLUE, blueRectangle)
+	pygame.draw.rect(screen, BROWN, brownRectangle)
+	pygame.draw.rect(screen, GREY, greyRectangle)
+	pygame.draw.rect(screen, BLACK, blackRectangle)
 
-    pygame.draw.circle(screen, currentColour, (dis_width - radius, radius), radius)
+	pygame.draw.circle(screen, currentColour, (dis_width - radius, radius), radius)
 
-    screen.blit(maximize, maxRect)
-    screen.blit(minimize, minRect)
-    screen.blit(plusButton, plusRect)
-    screen.blit(minusButton, minusRect)
-    screen.blit(eraser, eraserRect)
-    screen.blit(clearButton, clearRect)
-    screen.blit(randColor, randRect)
-    screen.blit(link, linkRect)
-    pygame.display.update()
+	screen.blit(maximize, maxRect)
+	screen.blit(minimize, minRect)
+	screen.blit(plusButton, plusRect)
+	screen.blit(minusButton, minusRect)
+	screen.blit(eraser, eraserRect)
+	screen.blit(clearButton, clearRect)
+	screen.blit(randColor, randRect)
+	screen.blit(link, linkRect)
+	pygame.display.update()
 
 pygame.quit()
 file1.close()
