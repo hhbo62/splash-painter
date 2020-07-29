@@ -4,10 +4,13 @@ file1 = open("logs.txt","a")
 
 def log(logText, error=False, log=True):
 	if error and not log:
+		return f'The program logged an error. {logText}\n'
 		file1.write(f'The program logged an error. {logText}\n')
 	elif not error and log:
+		return f'Logging {logText}\n'
 		file1.write(f'Logging {logText}\n')
 	elif error and log:
+		return f'There was an error and a log: {logText}\n'
 		file1.write(f'There was an error and a log: {logText}\n')
 
 import pygame
